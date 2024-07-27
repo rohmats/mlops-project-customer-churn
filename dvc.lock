@@ -54,7 +54,7 @@ stages:
     params:
       params.yaml:
         random_forest.max_depth: 13
-        random_forest.n_estimators: 400
+        random_forest.n_estimators: 100
   log_production_model:
     cmd: python src/models/production_model_selection.py --config=params.yaml
     deps:

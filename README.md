@@ -46,6 +46,10 @@ dvc add data/external/train.csv
 ```shell
 pip install dagshub mlflow
 ```
+## Unit testing
+```shell
+pytest -v 
+```
 
 ## Project Organization
 ------------

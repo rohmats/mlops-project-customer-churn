@@ -16,11 +16,6 @@ Pytest: To implement the unit tests
 ==============================
 
 ## Environment Setup
-### Conda Environment
-```shell
-conda create -n customer_churn python=3.9 -y 
-conda activate customer_churn
-```
 ### Cookiecutter
 ```shell
 pip install cookiecutter-data-science
@@ -33,6 +28,19 @@ cookiecutter https://github.com/drivendata/cookiecutter-data-science -c v1
 - Select open_source_license: select MIT(option 1)
 - s3_bucket /aws_profile[Optional]: just press enter
 - Select python_interpreter:python3 ( Option 1)
+
+### Conda Environment
+```shell
+conda create -n customer_churn python=3.9 -y 
+conda activate customer_churn
+```
+
+### DVC
+```shell
+pip install dvc 
+dvc init 
+dvc add data/external/train.csv 
+```
 
 ## Project Organization
 ------------

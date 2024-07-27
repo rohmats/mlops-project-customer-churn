@@ -4,6 +4,11 @@ import argparse
 from pprint import pprint
 from train_model import read_params
 from mlflow.tracking import MlflowClient
+              
+import dagshub
+dagshub.init(repo_owner='rohmats',
+             repo_name='mlops-project-customer-churn',
+             mlflow=True)
 
 def log_production_model(config_path):
     config = read_params(config_path)

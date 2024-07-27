@@ -1,6 +1,6 @@
 # End to End MLOps Project - Customer Churn Prediction
 ## Objective
-Predict whether a customer will change telco provider
+Predict whether a customer will change telco provider using this kaggle [dataset](https://www.kaggle.com/c/customer-churn-prediction-2020/data?select=train.csv).
 
 ## Technologies
 Cookiecutter: Data science project structure

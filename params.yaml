@@ -24,7 +24,7 @@ random_forest:
   max_depth: 50
   n_estimators: 30
 
-model_dir: models/model.joblib
+model_dir: webapp/model_webapp_dir/model.joblib
 
 model_webapp_dir: webapp/model_webapp_dir/model.joblib
 

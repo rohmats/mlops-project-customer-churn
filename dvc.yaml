@@ -34,4 +34,4 @@ stages:
     - random_forest.max_depth
     - random_forest.n_estimators
     outs:
-    - models/model.joblib
+    - webapp/model_webapp_dir/model.joblib

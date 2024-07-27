@@ -67,7 +67,7 @@ stages:
         random_forest.max_depth: 50
         random_forest.n_estimators: 30
     outs:
-    - path: models/model.joblib
+    - path: webapp/model_webapp_dir/model.joblib
       hash: md5
       md5: f28b3bff3b5993416a41ca6b659d7b4a
       size: 1563540

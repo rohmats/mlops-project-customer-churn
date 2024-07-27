@@ -8,6 +8,7 @@ Data version control (DVC): Version control of the data assets and to make pipel
 Github: For code version control
 GitHub Actions: To create the CI-CD pipeline
 MLFlow: For model registry
+Dagshub: MLFlow Integration
 Heroku: To deploy the application
 Flask: To create a web app
 EvidentlyAI: To evaluate and monitor ML models in production
@@ -40,6 +41,10 @@ conda activate customer_churn
 pip install dvc 
 dvc init 
 dvc add data/external/train.csv 
+```
+## MLflow Dagshub
+```shell
+pip install dagshub mlflow
 ```
 
 ## Project Organization

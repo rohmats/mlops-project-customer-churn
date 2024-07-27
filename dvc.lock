@@ -60,7 +60,7 @@ stages:
     deps:
     - path: src/models/production_model_selection.py
       hash: md5
-      md5: 5ba1db45269d3807536df0ab4097d1f8
+      md5: 90885f00c33b1623fb974ef5cc1973b9
       size: 1827
     params:
       params.yaml:
@@ -69,5 +69,5 @@ stages:
     outs:
     - path: models/model.joblib
       hash: md5
-      md5: f10149698423fc7cbda778ffc93c8046
-      size: 727700
+      md5: f28b3bff3b5993416a41ca6b659d7b4a
+      size: 1563540

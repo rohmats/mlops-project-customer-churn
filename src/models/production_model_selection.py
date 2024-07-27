@@ -18,7 +18,7 @@ def log_production_model(config_path):
     remote_server_uri = mlflow_config["remote_server_uri"]
 
     mlflow.set_tracking_uri(remote_server_uri)
-    runs = mlflow.search_runs(experiment_ids="1")
+    runs = mlflow.search_runs(experiment_ids="0")
     max_accuracy = max(runs["metrics.accuracy"])
     max_accuracy_run_id = list(runs[runs["metrics.accuracy"] == max_accuracy]["run_id"])[0]
     

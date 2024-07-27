@@ -47,60 +47,59 @@ dvc repro
 ```shell
 pip install dagshub mlflow
 ```
+
 ## Unit testing
 ```shell
 pytest -v 
 ```
 
+## CI/CD Pipeline
+To create a CI/CD pipeline for your project, you can use GitHub Actions. Here are the steps to set it up:
+
+1. Create a `.github/workflows` directory in your repository.
+2. Inside the `workflows` directory, create a YAML file (e.g., `ci-cd.yml`) to define your CI/CD workflow.
+3. In the YAML file, define the workflow using the `on` keyword to specify the events that trigger the workflow (e.g., push to the `main` branch).
+4. Use the `jobs` keyword to define the steps of your workflow. For example, you can have a job to build and test your code, and another job to deploy the application.
+5. Configure the necessary environment variables and secrets for your workflow, such as API keys or deployment credentials.
+6. Commit and push the YAML file to your repository.
+
+With GitHub Actions, you can automate the build, test, and deployment processes of your project, ensuring that your application is always up-to-date and running smoothly.
+
+## Linting
+This project uses `flake8` for code linting
+
+## [Final App Deployed on Heroku](https://mlops-sur-a44e15b513c2.herokuapp.com/)
+
 ## Project Organization
 ------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
-
+    ├── artifacts               <- MLflow artifacts
+    │   └── 1
+    │       └── 465969c77a7341d1b58ee4b044cbbcf8
+    │           └── artifacts
+    │               └── model
+    ├── data                    <- Data directory
+    │   ├── external            <- Data from third party sources
+    │   ├── processed           <- The final, canonical data sets for modeling
+    │   └── raw                 <- The original, immutable data dump
+    ├── docs
+    ├── models                  <- Trained and serialized models, model predictions, or model summaries
+    ├── notebooks               <- Jupyter notebooks
+    ├── references              <- Data dictionaries, manuals, and all other explanatory materials
+    ├── reports                 <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures
+    ├── src                     <- Source code for use in this project
+    │   ├── data                <- Scripts to download or generate data
+    │   ├── features            <- Scripts to turn raw data into features for modeling
+    │   ├── models              <- Scripts to train models and then use trained models to make predictions
+    │   └── visualization       <- Scripts to create exploratory and results oriented visualizations
+    ├── tests                   <- Unit tests
+    └── webapp                  <- Web application
+        ├── model_webapp_dir    <- Model web application directory
+        ├── scripts             <- Scripts to run the web application
+        ├── static              <- Static files
+        │   └── css
+        └── templates           <- HTML templates
 --------
 
+---
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>

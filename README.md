@@ -40,7 +40,8 @@ conda activate customer_churn
 ```shell
 pip install dvc 
 dvc init 
-dvc add data/external/train.csv 
+dvc add data/external/train.csv
+dvc repro
 ```
 ## MLflow Dagshub
 ```shell

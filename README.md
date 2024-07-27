@@ -1,9 +1,40 @@
-mlops-project-customer-churn
+# End to End MLOps Project - Customer Churn Prediction
+## Objective
+Predict whether a customer will change telco provider
+
+## Technologies
+Cookiecutter: Data science project structure
+Data version control (DVC): Version control of the data assets and to make pipeline
+Github: For code version control
+GitHub Actions: To create the CI-CD pipeline
+MLFlow: For model registry
+Heroku: To deploy the application
+Flask: To create a web app
+EvidentlyAI: To evaluate and monitor ML models in production
+Pytest: To implement the unit tests
+
 ==============================
 
-End to End MLOps Project - Customer Churn Prediction
+## Environment Setup
+### Conda Environment
+```shell
+conda create -n customer_churn python=3.9 -y 
+conda activate customer_churn
+```
+### Cookiecutter
+```shell
+pip install cookiecutter-data-science
+cookiecutter https://github.com/drivendata/cookiecutter-data-science -c v1
+```
+- project_name: mlops-project-customer-churn
+- repo_name: mlops-project-customer-churn
+- author_name: rohmats
+- description: End to End MLOps Project - Customer Churn Prediction
+- Select open_source_license: select MIT(option 1)
+- s3_bucket /aws_profile[Optional]: just press enter
+- Select python_interpreter:python3 ( Option 1)
 
-Project Organization
+## Project Organization
 ------------
 
     ├── LICENSE

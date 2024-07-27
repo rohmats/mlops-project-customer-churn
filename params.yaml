@@ -21,7 +21,7 @@ mlflow_config:
   remote_server_uri: https://dagshub.com/rohmats/mlops-project-customer-churn.mlflow
  
 random_forest: 
-  max_depth: 10
+  max_depth: 50
   n_estimators: 30
 
 model_dir: models/model.joblib

@@ -69,6 +69,9 @@ This project uses `flake8` for code linting
 
 ## [Final App Deployed on Heroku](https://mlops-sur-a44e15b513c2.herokuapp.com/)
 
+## Data Pipeline
+![alt text](image.png)
+
 ## Project Organization
 ------------
     ├── artifacts               <- MLflow artifacts

@@ -1,9 +1,11 @@
-import yaml
+"""Module providing a function for model monitoring using evidently."""
+
 import argparse
+import yaml
 import pandas as pd
 
 from evidently.dashboard import Dashboard
-from evidently.metrics.data_drift_metrics import DataDriftTab, CatTargetDriftTab
+from evidently.dashboard.tabs import DataDriftTab,CatTargetDriftTab
 
 def read_params(config_path):
     """

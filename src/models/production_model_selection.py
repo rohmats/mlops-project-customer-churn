@@ -1,3 +1,5 @@
+"""Module providing a function for logging the production model."""
+
 import joblib
 import mlflow
 import argparse

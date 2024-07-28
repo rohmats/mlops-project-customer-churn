@@ -3,17 +3,17 @@
 Predict whether a customer will change telco provider using this kaggle [dataset](https://www.kaggle.com/c/customer-churn-prediction-2020/data?select=train.csv).
 
 ## Technologies
-- Cookiecutter: Data science project structure
-- Data version control (DVC): Version control of the data assets and to make pipeline
-- Github: For code version control
-- GitHub Actions: To create the CI-CD pipeline
-- MLFlow: For model registry
-- Dagshub: MLFlow Integration
-- Heroku: To deploy the application
-- Flask: To create a web app
-- EvidentlyAI: To evaluate and monitor ML models in production
-- Pytest: To implement the unit tests
-- Flake8: Code linting
+- [Cookiecutter](https://github.com/drivendataorg/cookiecutter-data-science): Data science project structure
+- [Data version control (DVC)](https://github.com/iterative/dvc): Version control of the data assets and to make pipeline
+- [Github](https://github.com/): For code version control
+- [GitHub Actions](https://github.com/): To create the CI-CD pipeline
+- [MLFlow](https://mlflow.org/): For model registry
+- [Dagshub](https://dagshub.com/): MLFlow and DVC integration
+- [Heroku](https://heroku.com/): To deploy the application
+- [Flask](https://flask.palletsprojects.com/en/3.0.x/): To create a web app
+- [EvidentlyAI](https://www.evidentlyai.com/): To evaluate and monitor ML models in production
+- [Pytest](https://pypi.org/project/pytest/): To implement the unit tests
+- [Flake8](https://pypi.org/project/flake8/): Code linting
 
 ## Environment Setup
 ### Cookiecutter
@@ -36,6 +36,7 @@ conda activate customer_churn
 ```
 
 ### DVC
+> Version control of the data assets and to make pipeline
 ```shell
 pip install dvc 
 dvc init 
@@ -46,6 +47,7 @@ dvc repro
 ```shell
 pip install dagshub mlflow
 ```
+[MLflow UI]([https://](https://dagshub.com/rohmats/mlops-project-customer-churn.mlflow))
 
 ## Unit testing
 ```shell

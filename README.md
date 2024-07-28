@@ -15,8 +15,6 @@ Predict whether a customer will change telco provider using this kaggle [dataset
 - Pytest: To implement the unit tests
 - Flake8: Code linting
 
-==============================
-
 ## Environment Setup
 ### Cookiecutter
 ```shell

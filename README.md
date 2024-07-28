@@ -3,16 +3,17 @@
 Predict whether a customer will change telco provider using this kaggle [dataset](https://www.kaggle.com/c/customer-churn-prediction-2020/data?select=train.csv).
 
 ## Technologies
-Cookiecutter: Data science project structure
-Data version control (DVC): Version control of the data assets and to make pipeline
-Github: For code version control
-GitHub Actions: To create the CI-CD pipeline
-MLFlow: For model registry
-Dagshub: MLFlow Integration
-Heroku: To deploy the application
-Flask: To create a web app
-EvidentlyAI: To evaluate and monitor ML models in production
-Pytest: To implement the unit tests
+- Cookiecutter: Data science project structure
+- Data version control (DVC): Version control of the data assets and to make pipeline
+- Github: For code version control
+- GitHub Actions: To create the CI-CD pipeline
+- MLFlow: For model registry
+- Dagshub: MLFlow Integration
+- Heroku: To deploy the application
+- Flask: To create a web app
+- EvidentlyAI: To evaluate and monitor ML models in production
+- Pytest: To implement the unit tests
+- Flake8: Code linting
 
 ==============================
 
